@@ -1,15 +1,15 @@
 Object:
-Stack velocities from different events for the same station, and calculate the average velocity. 
+Stack velocity results from different events for the same station, then calculate and plot the average velocity 
 
+Workflow:
 1)On the GORDON sever /oasis/scratch/yuanliu/temp_project/eastern_us
 extract dynamical and structural velocity files from each event, stack them together for slowness
 usage: ./get_all_slowness.sh
 
 2)Download slowness_all folder to local directory(/Users/yuanyuanliu/Documents/wg_method/eastern_US/velo_stacking)
-find the average slowness than average velocity, finally plot the velocity maps
 usage: ./get_final_average.sh
 
-There are several steps inside:
+There are several steps:
 1]using python script to find average slowness, remove 'nan' results 
 2]find the stations' latitude and longitude, then transfer slowness to velocity
 3]plot the average velocity distribution maps

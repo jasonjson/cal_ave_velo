@@ -38,7 +38,6 @@ def stack_velo(infile,outfile):
         outf.write(key + ' '+ str(value) + '\n')
     outf.close 
 
-#stack_velo('stru_slowness_1','stru_slowness_ave_1')
 def main():
     for i in [1,2,3,4,5,6,7,8,9,10,12,14,16,18,20]:
         stack_velo('dyna_slowness_'+str(i),'dyna_slowness_ave_'+str(i))
